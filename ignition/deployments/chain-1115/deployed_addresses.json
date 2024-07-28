@@ -1,0 +1,6 @@
+{
+  "HelloWorldModule#HelloWorld": "0xBD83094c654a2e75EF7499213f937063A1A3400d",
+  "TestContractModule#TestDeployment": "0x51bCc86307Ae24493a3c491732bC9EDC83d8228a",
+  "CoreLoanPlatformModule#CoreLoanPlatform": "0x9D673FAe10b75bD16FcC464A7364958F641d8b72",
+  "CoreLoanPlatform#CoreLoanPlatform": "0xD9ecDdeA33DB5773824a43b299Fc6f554cDEF0D3"
+}

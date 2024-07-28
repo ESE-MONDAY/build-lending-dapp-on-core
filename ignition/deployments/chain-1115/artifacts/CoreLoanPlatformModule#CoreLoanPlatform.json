@@ -1,0 +1,63 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "CoreLoanPlatform",
+  "sourceName": "contracts/CoreLoanPlatform.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "borrowableRatio",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "collateralRatio",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "interestRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "loanDuration",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405260966000556005600155605060025562278d006003556000600455600060055534801561003057600080fd5b5060b38061003f6000396000f3fe6080604052348015600f57600080fd5b506004361060465760003560e01c80637218d12814604b5780637c3a00fd146065578063b4eae1cb14606d578063f5521bf1146075575b600080fd5b605360025481565b60405190815260200160405180910390f35b605360015481565b605360005481565b60536003548156fea26469706673582212203f42282bb9e98c3d5c6020c5d12358df8b26cde1b6620781e257a7083ab0adb564736f6c63430008180033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060465760003560e01c80637218d12814604b5780637c3a00fd146065578063b4eae1cb14606d578063f5521bf1146075575b600080fd5b605360025481565b60405190815260200160405180910390f35b605360015481565b605360005481565b60536003548156fea26469706673582212203f42282bb9e98c3d5c6020c5d12358df8b26cde1b6620781e257a7083ab0adb564736f6c63430008180033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

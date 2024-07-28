@@ -1,0 +1,414 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "CoreLoanPlatform",
+  "sourceName": "contracts/CoreLoanPlatform.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "BTC",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "USD",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "borrowBTC",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "borrowableRatio",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "calculateInterest",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "collateralRatio",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "depositBTC",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "depositCollateral",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "getBorrowableAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getCurrentApy",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "lender",
+          "type": "address"
+        }
+      ],
+      "name": "getLenderBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_borrower",
+          "type": "address"
+        }
+      ],
+      "name": "getLoanDetails",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "collateral",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "active",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct CoreLoanPlatform.Loan",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTotalBorrowed",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTotalStaked",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserCollateral",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserStaked",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "interestRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "lenderBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "loanDuration",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "loans",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "collateral",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "active",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "repayLoan",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "userCollateral",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawBTC",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawCollateral",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60c060405260966000556005600155605060025562278d006003556000600455600060055534801561003057600080fd5b5060805160a05161041f6100566000396000610237015260006101cb015261041f6000f3fe608060405234801561001057600080fd5b50600436106101985760003560e01c8063a6b6d798116100e3578063dac3fc3f1161008c578063f4925de511610066578063f4925de51461019d578063f5521bf114610338578063f69f1e4a1461034157600080fd5b8063dac3fc3f14610267578063e11932cf14610267578063e8a7da8e146102f057600080fd5b8063bad4a01f116100bd578063bad4a01f14610259578063bd09085a14610267578063d1a405641461025957600080fd5b8063a6b6d79814610259578063b4eae1cb146102e7578063b6f7132f1461026757600080fd5b80636112fe2e1161014557806373b4086b1161011f57806373b4086b146102845780637c3a00fd146102de57806390b4588b1461025957600080fd5b80636112fe2e14610259578063691d1eb3146102675780637218d1281461027b57600080fd5b80631bf6c21b116101765780631bf6c21b146101c6578063275972ca146102125780632792949d1461023257600080fd5b80630307c4a11461019d5780630917e7761461019d578063190ef1e6146101b3575b600080fd5b60005b6040519081526020015b60405180910390f35b6101c46101c1366004610393565b50565b005b6101ed7f000000000000000000000000000000000000000000000000000000000000000081565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020016101aa565b6101a0610220366004610393565b60076020526000908152604090205481565b6101ed7f000000000000000000000000000000000000000000000000000000000000000081565b6101c46101c13660046103d0565b6101a0610275366004610393565b50600090565b6101a060025481565b6102bc610292366004610393565b60066020526000908152604090208054600182015460028301546003909301549192909160ff1684565b60408051948552602085019390935291830152151560608201526080016101aa565b6101a060015481565b6101a060005481565b6103036102fe366004610393565b610361565b6040516101aa919081518152602080830151908201526040808301519082015260609182015115159181019190915260800190565b6101a060035481565b6101a061034f366004610393565b60086020526000908152604090205481565b61038e60405180608001604052806000815260200160008152602001600081526020016000151581525090565b919050565b6000602082840312156103a557600080fd5b813573ffffffffffffffffffffffffffffffffffffffff811681146103c957600080fd5b9392505050565b6000602082840312156103e257600080fd5b503591905056fea2646970667358221220209581ae2c2f9b7e715fe90b7815964a97b462d12e05db66aa37f23644646cd164736f6c63430008180033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106101985760003560e01c8063a6b6d798116100e3578063dac3fc3f1161008c578063f4925de511610066578063f4925de51461019d578063f5521bf114610338578063f69f1e4a1461034157600080fd5b8063dac3fc3f14610267578063e11932cf14610267578063e8a7da8e146102f057600080fd5b8063bad4a01f116100bd578063bad4a01f14610259578063bd09085a14610267578063d1a405641461025957600080fd5b8063a6b6d79814610259578063b4eae1cb146102e7578063b6f7132f1461026757600080fd5b80636112fe2e1161014557806373b4086b1161011f57806373b4086b146102845780637c3a00fd146102de57806390b4588b1461025957600080fd5b80636112fe2e14610259578063691d1eb3146102675780637218d1281461027b57600080fd5b80631bf6c21b116101765780631bf6c21b146101c6578063275972ca146102125780632792949d1461023257600080fd5b80630307c4a11461019d5780630917e7761461019d578063190ef1e6146101b3575b600080fd5b60005b6040519081526020015b60405180910390f35b6101c46101c1366004610393565b50565b005b6101ed7f000000000000000000000000000000000000000000000000000000000000000081565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020016101aa565b6101a0610220366004610393565b60076020526000908152604090205481565b6101ed7f000000000000000000000000000000000000000000000000000000000000000081565b6101c46101c13660046103d0565b6101a0610275366004610393565b50600090565b6101a060025481565b6102bc610292366004610393565b60066020526000908152604090208054600182015460028301546003909301549192909160ff1684565b60408051948552602085019390935291830152151560608201526080016101aa565b6101a060015481565b6101a060005481565b6103036102fe366004610393565b610361565b6040516101aa919081518152602080830151908201526040808301519082015260609182015115159181019190915260800190565b6101a060035481565b6101a061034f366004610393565b60086020526000908152604090205481565b61038e60405180608001604052806000815260200160008152602001600081526020016000151581525090565b919050565b6000602082840312156103a557600080fd5b813573ffffffffffffffffffffffffffffffffffffffff811681146103c957600080fd5b9392505050565b6000602082840312156103e257600080fd5b503591905056fea2646970667358221220209581ae2c2f9b7e715fe90b7815964a97b462d12e05db66aa37f23644646cd164736f6c63430008180033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
